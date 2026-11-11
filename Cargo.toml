@@ -1,12 +1,12 @@
 
 [package]
 name = "deadlock-discord-presence"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
-description = "Deadlock Discord rich presence state tracking and IPC helpers"
+description = "Deadlock Discord Rich Presence"
 license = "GPL-3.0"
-repository = "https://github.com/deadlock-mod-manager/deadlock-mod-manager"
-homepage = "https://github.com/deadlock-mod-manager/deadlock-mod-manager"
+repository = "https://github.com/k18554540/deadlock-discord-rich-presence"
+homepage = "https://github.com/k18554540/deadlock-discord-rich-presence"
 
 [lib]
 name = "deadlock_discord_presence"
@@ -28,6 +28,9 @@ serde_json = "1"
 sysinfo = { version = "0.37.2", features = ["windows"] }
 tokio = { version = "1.50.0", features = ["time", "rt-multi-thread", "macros", "signal"] }
 ts-rs = { version = "11.1.0", features = ["serde-compat"] }
+image = { version = "0.25", default-features = false, features = ["ico"] }
+tao = "0.33"
+tray-icon = "0.21"
 
 [build-dependencies]
 winres = "0.1"
